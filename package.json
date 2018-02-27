@@ -1,0 +1,24 @@
+{
+  "name": "url-query-updater",
+  "version": "1.0.0",
+  "description": "a url query updater that update your query",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "tiansijie",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiansijie/url-query-updater"
+  },
+  "keywords": [
+    "url",
+    "query",
+    "url-query",
+    "updater"
+  ],
+  "devDependencies": {
+    "jest": "^22.4.2"
+  }
+}
