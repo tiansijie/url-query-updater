@@ -1,11 +1,11 @@
 module.exports = function urlQueryUpdater(args) {
-	const updates = args.updates || {};
-	const delimiter = args.delimiter || "&";
-	const prefix = args.shouldIncludePrefix ? "?" : "";
-	const queryCopy = Object.assign({}, args.query, updates);
-	const updatedKeys = Object.keys(queryCopy).reduce((queryMap, key) => {
+	var updates = args.updates || {};
+	var delimiter = args.delimiter || "&";
+	var prefix = args.shouldIncludePrefix ? "?" : "";
+	var queryCopy = Object.assign({}, args.query, updates);
+	var updatedKeys = Object.keys(queryCopy).reduce(function (queryMap, key) {
 		if (queryCopy[key]) {
-			return queryMap.concat(`${key}=${queryCopy[key]}`);
+			return queryMap.concat(key + "=" + queryCopy[key]);
 		}
 		return queryMap;
 	}, []);
